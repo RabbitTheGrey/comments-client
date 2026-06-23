@@ -49,7 +49,7 @@ final class CommentClient implements CommentClientInterface
         $properties = get_class_vars(Comment::class);
 
         foreach ($changeset as $key => $value) {
-            if (!array_key_exists($key, $properties)) {
+            if (!array_key_exists($key, $properties) || $changeset[$key] === 'id') {
                 unset($changeset[$key]);
             }
         }
