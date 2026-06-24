@@ -2,6 +2,10 @@
 `composer require rabbitthegrey/comments-client`
 
 ### Использование ###
+```php
+$client = new RabbitTheGrey\CommentsClient\CommentClient();
+```
+
 Возаращает список комментариев
 ```php
 $client->getComments();
