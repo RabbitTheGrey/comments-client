@@ -12,6 +12,7 @@ $client->getComments();
 $newComment = $client->createComment('Ilya', 'comment');
 ```
 
+Редактировать комментарий
 ```php
 $updatedComment = $client->updateComment(1, ['name' => 'ne Ilya', 'text' => 'updated comment']);
 ```
